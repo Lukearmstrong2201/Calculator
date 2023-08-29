@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" type="text/css" href= "styles/style.css" />
-    <script src="scripts/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
     <title>Calculator Project</title>
     
@@ -18,36 +16,38 @@
             <div class = "header_container">
                 <h1 id = "title">Calculator</h1>  
             </div>
-            <div class = input_row>
-                <input type="text" name="result" id="result" placeholder="Result" readonly />
-                <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+            <div class = "input_row">
+                <input type="text" id="Myresult" placeholder="Result" readonly />
+                <input type="button" value="C" onclick="Myresult.value=''" id="clear-button" />
             </div>
-            <div class = second_row>
-                <input type="button" value = "7" onclick ="show(7)">
-                <input type="button" value = "8" onclick ="show(8)">
-                <input type="button" value = "9" onclick ="show(9)">
-                <input type="button" value = "/" onclick ="show('/')">
+            <div class = "second_row">
+                <input type="button" value = "7" onclick ="show(7)"/>
+                <input type="button" value = "8" onclick ="show(8)"/>
+                <input type="button" value = "9" onclick ="show(9)"/>
+                <input type="button" value = "/" onclick ="show('/')"/>
             </div> 
-            <div class = third_row>
-                <input type="button" value = "4" onclick="show(4)">
-                <input type="button" value = "5" onclick="show(5)">
-                <input type="button" value = "6" onclick="show(6)">
-                <input type="button" value = "x" onclick="show('x')">
+            <div class = "third_row">
+                <input type="button" value = "4" onclick="show(4)"/>
+                <input type="button" value = "5" onclick="show(5)"/>
+                <input type="button" value = "6" onclick="show(6)"/>
+                <input type="button" value = "x" onclick="show('*')"/>
             </div>
-            <div class = fourth_row>
-                <input type="button" value = "1" onclick="show(1)">
-                <input type="button" value = "2" onclick="show(2)">
-                <input type="button" value = "3" onclick="show(3)">
-                <input type="button" value = "-" onclick="show('-')">
+            <div class = "fourth_row">
+                <input type="button" value = "1" onclick="show(1)"/>
+                <input type="button" value = "2" onclick="show(2)"/>
+                <input type="button" value = "3" onclick="show(3)"/>
+                <input type="button" value = "-" onclick="show('-')"/>
             </div>
-            <div class = fith_row>
-                <input type="button" value = "0" onclick="show(0)">
-                <input type="button" value = "." onclick="show('.')">
-                <input type="button" value = "+" onclick="show('+')">
-                <input type="button" value = "=" onclick="show('=')">
+            <div class = "fith_row">
+                <input type="button" value = "0" onclick="show(0)"/>
+                <input type="button" value = "." onclick="show('.')"/>
+                <input type="button" value = "+" onclick="show('+')"/>
+                <input type="button" value = "=" onclick="calculateValue(Myresult.value)"/>
             </div>
         </div>
     </div>
+    <script type ="text/javascript" src="scripts/scripts.js">
+    </script>
 </body>
 </html>
 

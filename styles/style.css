@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
-    -webkit-appearance: none;
 }
 
 .wrapper {
@@ -40,10 +39,6 @@ h1 {
     align-items: center;
 }
 
-.header_buttons {
-    display: flex;
-    align-items: center;
-}
 
 input {
     border: none;
@@ -79,6 +74,10 @@ input [type = "button"]:hover {
     background-color: #fff;
     width: 222.5px;
 
+}
+
+#result{
+    border-radius: 20px;
 }
 
 #clear-button {
